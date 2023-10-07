@@ -1,0 +1,281 @@
+
+/* Termékek */
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 3 ;
+    align-items: left;
+    height: 450.4px;
+    width: 270px;
+    box-sizing: border-box;
+    padding: 3px;
+    margin: 10px;
+    text-align: left;
+}
+
+.product .product-price {
+    /*margin-bottom: auto;*/
+    margin: auto;
+    font-weight: bold;
+    color: green;
+    padding-bottom: 3px;
+  }
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.product .product-link-container {
+    margin-top: auto;
+    display: inline-block;
+  }
+  
+.product-image img {
+    width: 238px;
+    height: 250px;
+    object-fit: cover;
+    transition: transfrom 5.2s ease;
+    transform: translateY(0px);
+  }
+
+
+.product h3 {
+    font-size: 16px;
+    margin: 10px 0 auto 0;
+    text-align: left;
+    white-space: normal;
+    height: 3em;
+    overflow: visibe;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-details {
+    padding: 10px;
+    text-align: left;
+  }
+  
+.product p {
+    font-size: 14px;
+  }
+
+.product:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+.product-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #211f1e;
+    border: 2px solid #004f10;
+    padding: 5px 10px;
+    border-radius: 7px;
+  }
+  
+.product-link:hover {
+    text-decoration: underline;
+    background-color: #211f1e;
+    color: #ffcd03;
+    border: #ffcd03 solid 2px;
+  }
+  
+.product-carousel {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+.carousel-navigation {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.prev-button, .next-button {
+    background-color: #007000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+.prev-button:hover, .next-button:hover {
+    background-color: #004f10;
+  }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+/* Navbar */
+
+
+nav{
+  top: 0px;
+  border-bottom: 4px solid #ffcd03;
+  background-color: #211f1e;
+  color: #fff;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+  color: #FFF
+}
+
+.nav-link{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+.navbar-name{
+  display: inline-block;
+  justify-content: left;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.navbar-name:hover, .nav-link:hover {
+  transition-delay:0.1s;
+  text-decoration: underline dotted;
+  font-style: italic;
+  color: #004f10;
+  
+}
+  
+
+/* Keresőmező középre igazítása és border-radius hozzáadása */
+.navbar-collapse form {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin: 0, auto;
+  margin-right: 30px;
+  margin-left: 30px;
+  width: 900px;
+}
+
+.navbar-collapse form input {
+  border-radius: 15px;
+  text-align: center; /* Középre igazítás */
+}
+
+/* Dropdown menü háttérszín, keret és szöveg módosítása */
+.dropdown-menu {
+  background-color: #211f1e;
+  border: 4px solid #ffcd03;
+  border-top: 4px solid #211f1e;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown-menu > li > a:hover {
+  background-image: none;
+  background-color: #ffcd03;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+/* Random */
+
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+footer p {
+    margin: 0;
+  }  
+
+
+.szoveg{
+  background-color: #ffcd03;
+  border: #211f1e solid 3px;
+  color: #211f1e;
+  font-weight: bold;
+  text-decoration: underline;
+  padding: 5px 3px 3px 10px;
+}
+
+/* Carousel */
+
+
+.carousel > .carousel-inner > .carousel-item > img{
+  width: 100%; /* Yeap you can change the width and height*/
+  height:600px;
+}
+
+.carousel-item{
+  transition: transform 0.7s ease, opacity .5s ease-out
+}
+
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 15%;
+  list-style: none;
+}
+.carousel-indicators li {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+.carousel-indicators .active {
+  opacity: 1;
+}
+
